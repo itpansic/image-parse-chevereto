@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle image-parse-chevereto",
+        "command": "image-parse-chevereto:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "image-parse-chevereto",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "image-parse-chevereto:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

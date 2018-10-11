@@ -1,0 +1,67 @@
+{
+    "name": "image-parse-chevereto",
+    "main": "./lib/image-parse-chevereto",
+    "version": "0.1.0",
+    "description": "A short description of your package",
+    "keywords": [],
+    "activationCommands": {
+        "atom-workspace": "image-parse-chevereto:toggle"
+    },
+    "repository": "https://github.com/itpansic/image-parse-chevereto",
+    "license": "MIT",
+    "engines": {
+        "atom": ">=1.0.0 <2.0.0"
+    },
+    "dependencies": {},
+    "configSchema": {
+        "cheveretoUploadOn": {
+            "type": "boolean",
+            "default": true,
+            "title": "Chevereto Upload On",
+            "description": "If checked, parse a image into md file will start upload process.",
+            "order": 1
+        },
+        "cheveretoUploadOnloadSwitch": {
+            "type": "boolean",
+            "default": true,
+            "title": "Chevereto Upload Onload Switch",
+            "description": "If checked, local images used in md file will start to upload when md file loaded. (Requries: 'Chevereto Upload On' On)",
+            "order": 2
+        },
+        "cheveretoApi": {
+            "type": "string",
+            "title": "Chevereto Api Url",
+            "description": "Input your api url like `https://yourdomain/api/1/upload`",
+            "default": "https://yourdomain/api/1/upload",
+            "order": 3
+        },
+        "cheveretoApiKey": {
+            "type": "string",
+            "title": "Chevereto Api Key",
+            "description": "Input your api key, you can find it in your dashboard, default is my key ,Do not mark sure always available.",
+            "default": "",
+            "order": 4
+        },
+        "localImageSave": {
+            "type": "boolean",
+            "default": false,
+            "title": "Local Image Save",
+            "description": "If checked, the images will alse be saved in a subfolder when you parse a image into md file.",
+            "order": 5
+        },
+        "localSubfolderName": {
+            "type": "string",
+            "default": "images",
+            "title": "Local Subfolder Name",
+            "description": "Subfolder name for images, set to empty will use the same name of your md file, eg: md file name xxxx.md, subfolder name xxxx.",
+            "order": 6
+        },
+        "localImageAutoremove": {
+            "type": "boolean",
+            "default": true,
+            "title": "Local Image Autoremove",
+            "description": "If checked, images in subfolder (set in 'Local Subfolder Name') will be removed automaticlly after upload. Notes that images not in subfolder will not be moved in any case",
+            "order": 7
+        }
+    }
+}
