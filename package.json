@@ -32,7 +32,7 @@
             "type": "string",
             "title": "Chevereto Api Url",
             "description": "Input your api url like `https://yourdomain/api/1/upload`",
-            "default": "https://yourdomain/api/1/upload",
+            "default": "",
             "order": 3
         },
         "cheveretoApiKey": {
@@ -46,12 +46,12 @@
             "type": "boolean",
             "default": false,
             "title": "Local Image Save",
-            "description": "If checked, the images will alse be saved in a subfolder when you parse a image into md file.",
+            "description": "If checked, the images will alse be saved in a subfolder when you parse a image into md file, otherwise, image will be saved in subfolder .tmp and will be remove after upload.",
             "order": 5
         },
         "localSubfolderName": {
             "type": "string",
-            "default": "images",
+            "default": "",
             "title": "Local Subfolder Name",
             "description": "Subfolder name for images, set to empty will use the same name of your md file, eg: md file name xxxx.md, subfolder name xxxx.",
             "order": 6
@@ -60,7 +60,7 @@
             "type": "boolean",
             "default": true,
             "title": "Local Image Autoremove",
-            "description": "If checked, images in subfolder (set in 'Local Subfolder Name') will be removed automaticlly after upload. Notes that images not in subfolder will not be moved in any case",
+            "description": "If checked, images in subfolder (set in 'Local Subfolder Name') will be removed automaticlly after upload or no more used in md file. Notes that images not in subfolder will not be moved in any case",
             "order": 7
         }
     }
