@@ -60,7 +60,7 @@
             "type": "boolean",
             "default": true,
             "title": "Local Image Autoremove",
-            "description": "If checked, images in subfolder (set in 'Local Subfolder Name') will be removed automaticlly after upload or no more used in md file. Notes that images not in subfolder will not be moved in any case",
+            "description": "If checked, images in subfolder (set in 'Local Subfolder Name') will be removed automaticlly after upload. Notes that images not in subfolder will not be moved in any case",
             "order": 7
         }
     }
