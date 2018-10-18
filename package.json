@@ -27,7 +27,7 @@
             "type": "boolean",
             "default": true,
             "title": "Chevereto Upload On Load",
-            "description": "If checked, local images used in md file will start to upload when md file loaded. (Requries: 'Chevereto Upload On' On)",
+            "description": "If checked, local images used in md file will start to upload when md file loaded. ",
             "order": 2
         },
         "cheveretoApi": {
@@ -42,7 +42,12 @@
             "title": "Chevereto Image Size",
             "description": "Which size of the image to use after successfully upload. default for 'display_url', thumb for 'thumb -> url', medium for 'medium -> url', origin for 'url'",
             "default": "default",
-            "enum" : ["default","thumb", "medium", "origin"],
+            "enum": [
+                "default",
+                "thumb",
+                "medium",
+                "origin"
+            ],
             "order": 4
         },
         "cheveretoApiKey": {
