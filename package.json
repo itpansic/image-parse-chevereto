@@ -12,19 +12,21 @@
     "engines": {
         "atom": ">=1.0.0 <2.0.0"
     },
-    "dependencies": {},
+    "dependencies": {
+        "request": "^2.55.0"
+    },
     "configSchema": {
-        "cheveretoUploadOn": {
+        "cheveretoUploadOnParse": {
             "type": "boolean",
             "default": true,
-            "title": "Chevereto Upload On",
+            "title": "Chevereto Upload On Parse",
             "description": "If checked, parse a image into md file will start upload process.",
             "order": 1
         },
-        "cheveretoUploadOnloadSwitch": {
+        "cheveretoUploadOnload": {
             "type": "boolean",
             "default": true,
-            "title": "Chevereto Upload Onload Switch",
+            "title": "Chevereto Upload On Load",
             "description": "If checked, local images used in md file will start to upload when md file loaded. (Requries: 'Chevereto Upload On' On)",
             "order": 2
         },
@@ -35,33 +37,41 @@
             "default": "",
             "order": 3
         },
+        "cheveretoImageSize": {
+            "type": "string",
+            "title": "Chevereto Image Size",
+            "description": "Which size of the image to use after successfully upload. default for 'display_url', thumb for 'thumb -> url', medium for 'medium -> url', origin for 'url'",
+            "default": "default",
+            "enum" : ["default","thumb", "medium", "origin"],
+            "order": 4
+        },
         "cheveretoApiKey": {
             "type": "string",
             "title": "Chevereto Api Key",
             "description": "Input your api key, you can find it in your dashboard, default is my key ,Do not mark sure always available.",
             "default": "",
-            "order": 4
+            "order": 5
         },
         "localImageSave": {
             "type": "boolean",
             "default": false,
             "title": "Local Image Save",
             "description": "If checked, the images will alse be saved in a subfolder when you parse a image into md file, otherwise, image will be saved in subfolder .tmp and will be remove after upload.",
-            "order": 5
+            "order": 6
         },
         "localSubfolderName": {
             "type": "string",
             "default": "",
             "title": "Local Subfolder Name",
             "description": "Subfolder name for images, set to empty will use the same name of your md file, eg: md file name xxxx.md, subfolder name xxxx.",
-            "order": 6
+            "order": 7
         },
         "localImageAutoremove": {
             "type": "boolean",
             "default": true,
             "title": "Local Image Autoremove",
             "description": "If checked, images in subfolder (set in 'Local Subfolder Name') will be removed automaticlly after upload. Notes that images not in subfolder will not be moved in any case",
-            "order": 7
+            "order": 8
         }
     }
 }
