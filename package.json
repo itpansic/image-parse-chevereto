@@ -4,9 +4,6 @@
     "version": "0.1.0",
     "description": "A short description of your package",
     "keywords": [],
-    "activationCommands": {
-        "atom-workspace": "image-parse-chevereto:toggle"
-    },
     "repository": "https://github.com/itpansic/image-parse-chevereto",
     "license": "MIT",
     "engines": {
@@ -22,13 +19,6 @@
             "title": "Chevereto Upload On Parse",
             "description": "If checked, parse a image into md file will start upload process.",
             "order": 1
-        },
-        "cheveretoUploadOnload": {
-            "type": "boolean",
-            "default": true,
-            "title": "Chevereto Upload On Load",
-            "description": "If checked, local images used in md file will start to upload when md file loaded. ",
-            "order": 2
         },
         "cheveretoApi": {
             "type": "string",

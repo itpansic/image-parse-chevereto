@@ -2,8 +2,8 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle image-parse-chevereto",
-        "command": "image-parse-chevereto:toggle"
+        "label": "Upload used images in subfolder",
+        "command": "image-parse-chevereto:upload in use"
       }
     ]
   },
@@ -15,8 +15,8 @@
           "label": "image-parse-chevereto",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "image-parse-chevereto:toggle"
+                "label": "Upload used images in subfolder",
+                "command": "image-parse-chevereto:upload in use"
             }
           ]
         }
