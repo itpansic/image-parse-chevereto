@@ -15,7 +15,7 @@
     "configSchema": {
         "cheveretoUploadOnParse": {
             "type": "boolean",
-            "default": true,
+            "default": false,
             "title": "Chevereto Upload On Parse",
             "description": "If checked, parse a image into md file will start upload process.",
             "order": 1
