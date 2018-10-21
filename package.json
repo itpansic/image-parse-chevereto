@@ -1,7 +1,7 @@
 {
     "name": "image-parse-chevereto",
     "main": "./lib/image-parse-chevereto",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "description": "A Markdown tool to upload image to a chevereto server",
     "keywords": [],
     "repository": "https://github.com/itpansic/image-parse-chevereto",
