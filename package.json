@@ -30,13 +30,11 @@
         "cheveretoImageSize": {
             "type": "string",
             "title": "Chevereto Image Size",
-            "description": "Which size of the image to use after successfully upload. default for 'url', thumb for 'thumb -> url', medium for 'medium -> url', origin for 'url'",
+            "description": "Which size of the image to use after successfully upload. default for 'url', medium for 'medium -> url'。",
             "default": "default",
             "enum": [
                 "default",
-                "thumb",
-                "medium",
-                "origin"
+                "medium"
             ],
             "order": 4
         },
